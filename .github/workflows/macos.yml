@@ -1,9 +1,5 @@
 name: 🍎 Macos Builds
-on:
-  push:
-    branches: [master, github_actions]
-  pull_request:
-    branches: [master]
+on: [workflow_dispatch]
 
 # Global Cache Settings
 env:
