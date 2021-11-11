@@ -90,7 +90,7 @@ jobs:
         env:
           SCONS_CACHE: ${{github.workspace}}/.scons_cache/
         run: |
-          scons -j2 verbose=yes warnings=extra werror=yes debug_symbols=no platform=javascript tools=no tests=no target=release
+          scons -j2 verbose=yes warnings=extra debug_symbols=no platform=javascript tools=no tests=no target=release
 
       # TODO Such tests are able to run from Godot 4.0 only
       # Execute unit tests for the editor
@@ -188,7 +188,7 @@ jobs:
         env:
           SCONS_CACHE: ${{github.workspace}}/.scons_cache/
         run: |
-          scons -j2 verbose=yes warnings=extra werror=yes debug_symbols=no platform=javascript tools=no tests=no target=release_debug
+          scons -j2 verbose=yes warnings=extra debug_symbols=no platform=javascript tools=no tests=no target=release_debug
 
       # TODO Such tests are able to run from Godot 4.0 only
       # Execute unit tests for the editor
